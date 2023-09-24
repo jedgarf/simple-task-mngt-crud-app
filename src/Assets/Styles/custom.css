@@ -1,0 +1,24 @@
+.content {
+    margin-top: 40px;
+}
+
+.content-card {
+    margin-bottom: 30px;
+}
+
+.task-list-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.task-action-bottons {
+    margin-right: 5px;
+}
+
+.task-botton-group {
+    float: right !important;
+}
+
+.task-form-bottons {
+    margin-right: 5px;
+}
