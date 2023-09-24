@@ -10,7 +10,11 @@ import { faSave, faRemove } from '@fortawesome/free-solid-svg-icons';
 const TaskForm = ({ saveType, addtaskValueOnChange, editTaskValueOnChange, taskOnSubmit, setEditId, setAddTaskValue, addTaskValue, setEditTaskValue, editTaskValue }) => {
 
     const onClearTaskForm = () => {
-        if (addTaskValue !== "") {
+        if (saveType === "Add" && addTaskValue !== "") {
+            window.location.reload();   
+        }
+
+        if (saveType === "Update" && editTaskValue !== "") {
             window.location.reload();   
         }
     }
