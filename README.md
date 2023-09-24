@@ -9,7 +9,7 @@ Browser I used: Firefox Developer Edition
 ## INSTALLATIONS
 1. Clone the repository
 2. Rename .env.example to .env
-3. Configure .env file (API_TOKEN, API BASE URL and etc.)
+3. Configure .env file (API_TOKEN, API_BASE_URL and etc.)
 5. Run `npm install` to install all dependencies
 6. Run `npm start`
 7. Browse `http://127.0.0.1:3000`
