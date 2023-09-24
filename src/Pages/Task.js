@@ -5,7 +5,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 
 // Font Awesome Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faList } from '@fortawesome/free-solid-svg-icons';
+import { faList } from '@fortawesome/free-solid-svg-icons';
 
 // Custom Components
 import TaskForm from "../Components/TaskForm";
