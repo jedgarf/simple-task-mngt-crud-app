@@ -20,7 +20,7 @@ const TaskForm = ({ saveType, addtaskValueOnChange, editTaskValueOnChange, taskO
 
     return (
         <>
-            <Form onSubmit={taskOnSubmit}>
+            <Form onSubmit={() => taskOnSubmit()}>
                 <Form.Group>
                     <Form.Label>Task *</Form.Label>
                     {saveType === "Add" ? 
@@ -29,7 +29,7 @@ const TaskForm = ({ saveType, addtaskValueOnChange, editTaskValueOnChange, taskO
                     (<Form.Control id="task-name" type="text" onKeyUp={(e) => editTaskValueOnChange(e)} defaultValue={editTaskValue} required/>)}
                 </Form.Group>
                 <br/>
-                <Button className="task-form-bottons" variant="danger" type="button" onClick={onClearTaskForm}>
+                <Button className="task-form-bottons" variant="danger" type="button" onClick={() => onClearTaskForm()}>
                     <FontAwesomeIcon icon={faRemove} /> Clear
                 </Button>
                 <Button className="task-form-bottons" variant="primary" type="submit">
